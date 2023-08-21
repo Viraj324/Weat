@@ -16,9 +16,11 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/searchviewshape"
+        android:foregroundTint="#40FFFFFF"
         android:iconifiedByDefault="false"
         android:queryHint="Search For a City"
         android:searchIcon="@drawable/search"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -42,7 +44,6 @@
         android:drawableLeft="@drawable/loctaion"
         android:drawablePadding="15dp"
         android:fontFamily="@font/merriweathersans_medium"
-        android:text="Pune"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/searchView"
@@ -137,9 +138,9 @@
         android:id="@+id/frameLayout"
         android:layout_width="383dp"
         android:layout_height="220dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="24dp"
         android:background="@drawable/backgroundshape1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -153,6 +154,8 @@
                 android:id="@+id/flow"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
                 android:orientation="horizontal"
                 app:constraint_referenced_ids="linearLayout,linearLayout2,linearLayout3,linearLayout4,linearLayout5,linearLayout6"
                 app:flow_maxElementsWrap="3"
@@ -375,8 +378,8 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="Windspeed"
-                    android:textSize="10sp"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
             </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
